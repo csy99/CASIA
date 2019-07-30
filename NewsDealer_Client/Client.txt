@@ -1,0 +1,6 @@
+2019-06-14 19:02:27,419 INFO [casia.isiteam.starter.ClientStarter] - This is a pro id:1
+2019-06-14 19:02:27,569 INFO [casia.isiteam.starter.ClientStarter] - Here is the size of news batch 1000
+2019-06-14 19:02:29,281 INFO [casia.isiteam.starter.ClientStarter] - client 1 finished tokenization and writing!
+2019-06-14 19:16:35,137 INFO [casia.isiteam.starter.ClientStarter] - This is a pro id:1
+2019-06-14 19:16:35,302 INFO [casia.isiteam.starter.ClientStarter] - Here is the size of news batch 1000
+2019-06-14 19:16:37,358 INFO [casia.isiteam.starter.ClientStarter] - client 1 finished tokenization and writing!
