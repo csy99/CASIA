@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="casia.isiteam.dao.RNewsDao">
+	<select id="getNews" parameterType="long" resultType="casia.isiteam.model.News">
+		SELECT id,
+		title, content, source_url as url, genus FROM News WHERE id=#{id}
+	</select>
+
+	<select id="getNewsBatch" resultType="casia.isiteam.model.News">
+		SELECT
+		id, title, content,
+		source_url as url, genus FROM News Limit
+		#{start},#{length}
+	</select>
+
+	<select id="getNewsBatchWithId" resultType="casia.isiteam.model.News">
+		SELECT
+		id, title,
+		content,
+		source_url as url, genus FROM News
+		WHERE id>#{id}
+		Limit #{length}
+	</select>
+
+</mapper> 
